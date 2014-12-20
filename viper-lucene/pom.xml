@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.whuims.irlab.viper</groupId>
+		<artifactId>viper-master</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>viper-lucene</artifactId>
+
+	<name>viper-lucene</name>
+	<url>http://maven.apache.org</url>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-core</artifactId>
+			<version>2.4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.whuims.irlab.viper</groupId>
+			<artifactId>viper-common</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
+	
+	<build>  
+ 
+      <plugins>  
+        <plugin>  
+            <artifactId>maven-resources-plugin</artifactId>  
+            <version>2.5</version>  
+            <executions>  
+                <execution>  
+                    <id>copy-dict</id>  
+                    <phase>process-sources</phase>  
+                    <goals>  
+                        <goal>copy-resources</goal>  
+                    </goals>  
+                    <configuration>  
+                        <outputDirectory>${basedir}/target/classes/org/apache/lucene/analysis/cn/smart/hhmm</outputDirectory>  
+                        <resources>  
+                            <resource>  
+                                <directory>${basedir}/src/main/java/org/apache/lucene/analysis/cn/smart/hhmm</directory>  
+                                <includes>  
+                                    <include>*.mem</include>  
+                                </includes>  
+                            </resource>  
+                        </resources>  
+                    </configuration>  
+                </execution>  
+            </executions>  
+        </plugin>     
+      
+    </plugins>       
+       
+   
+</build>  
+</project>

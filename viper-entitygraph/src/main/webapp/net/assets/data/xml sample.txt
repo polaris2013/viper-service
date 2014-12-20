@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--An excerpt of an egocentric social network-->
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">				
+	<key id="n" for="node" attr.name="name" attr.type="string"/> 
+	<key id="p" for="node" attr.name="photo" attr.type="string"/> 
+	<key id="i" for="node" attr.name="intro" attr.type="string"/>
+	<key id="a" for="node" attr.name="acount" attr.type="double"/>
+  	<key id="w" for="edge" attr.name="weight" attr.type="double"/>  
+	<key id="c" for="edge" attr.name="conn" attr.type="double"/>  
+  <graph xmlns="" edgedefault="undirected">
+				<node id="n1">
+				  <data key="n">Node1</data>
+				  <data key="p">pics/1.jpg</data>
+				  <data key="i"></data>
+				  <data key="a"></data>
+				</node>										
+				<!--edges-->
+ 				<edge source="n20" target="n10" >
+					<data key="w">1</data>
+				  	<data key="c">±§Ç¸£¬ÔÝÎÞÄÚÈÝ¡£</data>
+				</edge>
+  </graph>
+</graphml>

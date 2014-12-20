@@ -1,0 +1,3 @@
+Fri Oct 24 14:50:21 CST 2014: com.baidu.inf.reaper.utils.FileUtils->error:文件读取失败:testfile\shenxiang.txt (系统找不到指定的文件。)
+Sun Nov 02 00:31:49 CST 2014: com.baidu.inf.viper.opinion.utils.FileUtils->error:文件读取失败:d:\viper-res\ictclas-win32\dict\word.txt (系统找不到指定的文件。)
+Sun Nov 02 01:00:08 CST 2014: com.baidu.inf.viper.opinion.utils.FileUtils->error:文件读取失败:d:\viper-res\ictclas-win32\dict\word.txt (系统找不到指定的文件。)
